@@ -1,27 +1,23 @@
-This repository contains three functional programs for fliying drones.
+This repository is based off the dji tello drones and djitellopy library
 
 Install the requirements:
 ```python
 pip install -r requirements.txt  
 ```
 
-If you want to use the interactive drone flying program run this.  
-Within the Tello-EDU directory.
 
-
+The drone swarm works by turning on the tello drones and running this command:
 ```python
-python drone_interactive.py
+python swarm_config.py
 ```
-
-For the tello swarming capabilities you need to connect all tellos and the device you are running the progam on to the same network in my case I used a TP-Link router.
-
-Use swarm_config.py to either create a unique ssid for individual tello or connect tellos to a central router.
+swarm_config.py will connect to the drone and change it to client mode so that it will automatically connect to the specified AP
 
 To run swarm flying program run. After, getting everything connected to a router and setting rescan=True to get a new list of drone_ips related to your instance.
+
 ```
 python star_fleet.py
 ``` 
 
-Finally, refer to https://djitellopy.readthedocs.io/en/latest/tello/ 
+Refer to https://djitellopy.readthedocs.io/en/latest/tello/ 
 
 For syntax of the commands used to control the drones.

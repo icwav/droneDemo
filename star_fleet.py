@@ -90,18 +90,20 @@ class Swarm:
 # Example flight path for large room 
 # DO NOT USE in enclosed area 
 
-fleet_1 = Swarm(range(8), True)
+fleet_1 = Swarm(range(1))
 # fleet_2 = Swarm(range(1), False, "drone_ips2.txt")
 # fleet_3 = Swarm(range(1), False, "drone_ips3.txt")
 
 
-# fleet_1.send('command', 5)
+fleet_1.send('command', 5)
 # fleet_2.send('command', 5)
 # fleet_3.send('command', 5)
 
-# fleet_1.send('takeoff', 2)
+fleet_1.send('takeoff', 2)
 # fleet_2.send('takeoff', 2)
 # fleet_3.send('takeoff', 3)
+
+fleet_1.send('land', 2)
 
 # # fleet 3 flies up 400, 2 up 600, 1 up 800
 
@@ -123,7 +125,7 @@ fleet_1 = Swarm(range(8), True)
 
 
 
-# # up for debate
+# up for debate
 
 # #  flip right, left, forward
 # fleet_1.send('flip r', 3)
