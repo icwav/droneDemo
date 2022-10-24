@@ -89,59 +89,57 @@ class Swarm:
 
 # Example flight path for large room 
 # DO NOT USE in enclosed area 
-
+#print(Swarm(range(3), False, "drone_ips2.txt")
 fleet_1 = Swarm(range(1))
-# fleet_2 = Swarm(range(1), False, "drone_ips2.txt")
-# fleet_3 = Swarm(range(1), False, "drone_ips3.txt")
+fleet_2 = Swarm(range(2,4))
+#fleet_3 = Swarm(range(5,7))
 
 
 fleet_1.send('command', 5)
-# fleet_2.send('command', 5)
-# fleet_3.send('command', 5)
+#fleet_2.send('command', 5)
+#fleet_3.send('command', 5)
 
-fleet_1.send('takeoff', 2)
-# fleet_2.send('takeoff', 2)
-# fleet_3.send('takeoff', 3)
+fleet_1.send('takeoff', 5)
+#fleet_2.send('takeoff', 5)
+#fleet_3.send('takeoff', 5)
 
-fleet_1.send('land', 2)
 
 # # fleet 3 flies up 400, 2 up 600, 1 up 800
 
-# fleet_3.send('up 800', 3)
-# fleet_2.send('up 600', 3)
-# fleet_1.send('up 400', 4)
+fleet_1.send('up 800', 4)
+#fleet_2.send('up 600', 4)
+#fleet_3.send('up 400', 4)
 
 
 # #  fleet 1 rotates 360 cw, 2 rotates 360 ccw, 3 rotates 360 cw
-# fleet_1.send('cw 360', 3)
-# fleet_2.send('ccw 3600', 3)
-# fleet_3.send('cw 360', 3)
+fleet_1.send('cw 360', 4)
+#fleet_2.send('ccw 3600', 4)
+#fleet_3.send('cw 360', 4)
 
 
 
 # # fleet 1 down 400, 3 up 400
-# fleet_1.send('down 400', 3)
-# fleet_3.send('up 400', 3)
+#fleet_1.send('down 400', 3)
+#fleet_3.send('up 400', 3)
 
 
 
 # up for debate
 
 # #  flip right, left, forward
-# fleet_1.send('flip r', 3)
-# fleet_2.send('flip r', 3)
-# fleet_3.send('flip r', 3)
+fleet_1.send('flip r', 4)
+#fleet_2.send('flip r', 4)
+#fleet_3.send('flip r', 4)
 
-# fleet_1.send('flip l', 3)
-# fleet_2.send('flip l', 3)
-# fleet_3.send('flip l', 3)
+fleet_1.send('flip l', 4)
+#fleet_2.send('flip l', 4)
+#fleet_3.send('flip l', 4)
 
-# fleet_1.send('flip f', 3)
-# fleet_2.send('flip f', 3)
-# fleet_3.send('flip f', 3)
+fleet_1.send('flip f', 3)
+#fleet_2.send('flip f', 3)
+#fleet_3.send('flip f', 3)
 
 
-
-# fleet_1.send('land', 5)
-# fleet_2.send('land', 5)
-# fleet_3.send('land', 5)
+fleet_1.send('land', 5)
+#fleet_2.send('land', 5)
+#fleet_3.send('land', 5)

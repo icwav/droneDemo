@@ -2,7 +2,7 @@ from djitellopy import Tello
 from time import sleep
 drone = Tello()
 
-drone.connect()
+drone.connect(False)
 # set ssid name and password for individual tello
 
 # drone.set_wifi_credentials("Tello-CBF", "12345678")
