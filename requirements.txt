@@ -1,3 +1,7 @@
 opencv-python
 djitellopy
 pygame
+numpy
+opencv-contrib-python
+Pillow
+rope
