@@ -21,3 +21,8 @@ python star_fleet.py
 Refer to https://djitellopy.readthedocs.io/en/latest/tello/ 
 
 For syntax of the commands used to control the drones.
+
+For facial recognition, use the main.py file in the face_recognition folder
+```python
+python ./face_recognition/main.py
+```
